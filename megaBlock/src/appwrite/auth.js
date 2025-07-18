@@ -48,7 +48,6 @@ export class AuthService {
             console.error("Error fetching current user:", error);
             throw error;
         }
-        return null;
     }
     async logout() {
         try {
@@ -57,6 +56,7 @@ export class AuthService {
             console.error("Error logging out:", error)  ;
             throw error;
         }
+}
 }
 
 const authService = new AuthService();
